@@ -159,4 +159,4 @@ async function refreshState() {
 }
 document.getElementById('analyzeBtn').addEventListener('click', analyse);
 // Keep the UI synchronized with webhook updates from Razorpay
-setInterval(refreshState, 1000);
+setInterval(refreshState, 1000); 
