@@ -9,7 +9,7 @@
 ## Revive AI - Revenue Recovery Agent
 
 </div>
-<img width="1000" height="500" alt="Dashboraed " src="https://github.com/user-attachments/assets/db3d0b63-b3b6-4a6a-b09a-2c4e1a8a7bc3" />
+<img width="1000" height="500" alt="Dashboard " src="/data/Dashboard.jpg" />
 
 ---
 
