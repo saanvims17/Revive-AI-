@@ -28,9 +28,9 @@ Payment fails → Retry payment → Send reminder → Send another reminder → 
 
 ReviveAI is an **AI-assisted, policy-bounded Revenue Recovery Agent**.
 
-It processes payment events across a batch and closes the loop between detecting a failed payment and measuring whether the revenue was actually recovered.
+> It processes payment events across a batch and closes the loop between detecting a failed payment and measuring whether the revenue was actually recovered.
 
-The agent follows a continuous workflow:
+The agent follows a **continuous workflow:**
 
 ```text
 DETECT → DIAGNOSE → DECIDE → ACT → VERIFY → ADAPT OR STOP
@@ -450,28 +450,9 @@ This allows ReviveAI to demonstrate **measured revenue recovered across a batch*
 
 Every important action in the recovery workflow is recorded.
 
-Examples:
+<img width="400" height="800" alt="Audit Trail" src="https://github.com/user-attachments/assets/00910ec6-dffb-4f62-ab8d-324d49e341e1" />
 
-```text
-USR-1037: Customer selected Insufficient funds / Need more time.
-USR-1037: Customer scheduled payment recovery.
-USR-1037: Scheduled recovery time reached.
-USR-1037: Fresh payment link created.
 
-USR-1018: Matching bank incident detected.
-USR-1018: Customer notified about the temporary bank issue.
-USR-1018: Waiting for bank incident resolution.
-USR-1018: Bank incident resolved.
-USR-1018: Fresh payment link created.
-
-USR-1028: Customer reported a technical issue.
-USR-1028: Customer informed that support will get in touch.
-USR-1028: Case moved to human review.
-
-USR-1073: Customer selected I still want to continue.
-USR-1073: Fresh payment link created.
-USR-1073: Payment verified successfully.
-```
 
 The dashboard reflects **actual application events**.
 
@@ -503,16 +484,14 @@ ReviveAI uses explicit workflow states to show what is happening with each case.
 
 ---
 
-# System Architecture
-
-<img width="1000" height="500" alt="System Architecture " src="https://github.com/user-attachments/assets/2d2571e3-fabc-40e6-9733-3ccd43a672b7" />
-
-
 ---
 
 # Dashboard
 
 For every recovery case, the dashboard displays:
+
+<img width="800" height="500" alt="Queue " src="https://github.com/user-attachments/assets/f9f2d11f-7d7f-4f31-b7c8-808f83e56e7a" />
+
 
 | Field | Description |
 |---|---|
@@ -524,8 +503,7 @@ For every recovery case, the dashboard displays:
 | Recommended action | Selected intervention |
 | Current workflow | Current recovery state |
 | Customer notified | Whether notification was executed |
-| Payment link | Whether a fresh link is available |
-| Recovery status | Active, recovered, or stopped |
+
 
 The dashboard is designed for **monitoring and visibility**.
 
