@@ -432,7 +432,7 @@ The policy engine decides whether it is allowed.
 
 ---
 
-# 🤖 Where AI Fits In
+# Where AI Fits In
 
 ReviveAI uses AI for contextual diagnosis and reasoning.
 
@@ -445,7 +445,7 @@ The AI layer helps determine:
 
 The recovery agent operates as a closed loop:
 
-<img width="800" height="300" alt="AI AGENT" src="https://github.com/user-attachments/assets/82a424bf-af18-49b1-ab2a-8c70e46d9f39" />
+<img width="500" height="150" alt="AI AGENT" src="https://github.com/user-attachments/assets/82a424bf-af18-49b1-ab2a-8c70e46d9f39" />
 
 
 ### AI does not override policy.
@@ -498,7 +498,7 @@ http://localhost:3000
 
 ---
 
-# 🧪 Demo Flow
+# Demo Flow
 
 A complete demo can follow this sequence.
 
@@ -562,7 +562,7 @@ After the payment update/webhook:
 
 ---
 
-# 🎯 Why ReviveAI is Agentic
+# Why ReviveAI is Agentic
 
 ReviveAI is not just:
 
