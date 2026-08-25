@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1834" height="1112" alt="System Architecture " src="https://github.com/user-attachments/assets/9a1add48-1fc0-4e6f-9262-65a6a69b5780" /><p align="center">
   <img src="/data/openai.png" height="55" alt="OpenAI" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/razorpay" height="55" alt="Razorpay" />
@@ -39,7 +39,7 @@ The agent follows a **continuous workflow:**
 ```text
 DETECT → DIAGNOSE → DECIDE → ACT → VERIFY → ADAPT OR STOP
 ```
-<img width="700" height="500" alt="ChatGPT Image Aug 25, 2026, 02_56_09 PM" src="https://github.com/user-attachments/assets/e4e970b2-386c-4e01-9802-cf972ddc4ac9" />
+<img width="700" height="500" alt="Revive" src="/data/Revive.png" />
 
 ReviveAI does not stop after identifying a problem.
 
@@ -48,7 +48,8 @@ ReviveAI does not stop after identifying a problem.
 ---
 # System Architecture
 
-<img width="1000" height="500" alt="System Architecture " src="https://github.com/user-attachments/assets/2d2571e3-fabc-40e6-9733-3ccd43a672b7" />
+<img width="1000" height="500" alt="System Architecture" src="/data/System Architecture.jpg" />
+" />
 
 ## Admin Dashboard
 
