@@ -207,7 +207,7 @@ The system does not treat link creation as recovered revenue.
 
 # Key Capabilities
 
-## 📊 Detect Revenue at Risk
+## Detect Revenue at Risk
 
 ReviveAI analyses a batch of payment events and identifies recoverable revenue across situations such as:
 
@@ -227,7 +227,7 @@ The dashboard tracks:
 
 ---
 
-## 🧠 Diagnose the Situation
+## Diagnose the Situation
 
 A failed payment does not automatically mean the same recovery action should be taken.
 
@@ -246,7 +246,7 @@ ReviveAI analyses the available payment and recovery context to determine the li
 
 ---
 
-# 🔄 How ReviveAI Handles Recovery
+# How ReviveAI Handles Recovery
 
 ## 1. Checkout Abandonment or Payment Decline
 
@@ -412,28 +412,21 @@ The system respects explicit customer intent.
 
 ---
 
-# Bounded Recovery and Stopping Rules
+# Guardrails Before Action
 
 ReviveAI is designed to recover revenue **without blindly pursuing every failed payment**.
 
 Deterministic server-side policies define the boundaries of what the agent can execute.
 
-Recovery stops when:
+The AI can recommend an action.  
+The policy engine decides whether it is allowed.
 
-- The customer explicitly opts out
-- The customer explicitly changes their mind
-- The order is invalid
-- The maximum recovery attempt limit has been reached
-
-ReviveAI does **not** stop simply because:
-
-- A temporary bank issue is active
-- A bank incident is waiting for resolution
-- A checkout was abandoned and the customer has not answered
-- A technical issue requires human review
-- A customer needs more time to pay
-
-This separation is important:
+- Never contact an opted-out customer
+- Maximum recovery attempts per order
+- Active bank or technical incidents can pause outreach
+- Stopping rules always override AI recommendations
+- Ambiguous cases can be escalated to human review
+- Every important action is recorded
 
 > **AI helps understand the situation and choose the appropriate workflow. Policy guardrails determine whether an action is actually allowed.**
 
@@ -489,7 +482,7 @@ RAZORPAY_WEBHOOK_SECRET=your_razorpay_webhook_secret
 
 Use `.env.example` as the template.
 
-> ⚠️ Never commit your real `.env` file or API secrets to GitHub.
+> Never commit your real `.env` file or API secrets to GitHub.
 
 ## 4. Start the server
 
@@ -578,7 +571,16 @@ ReviveAI is not just:
 - A payment reminder tool
 - A static recommendation engine
 
-It operates through a bounded feedback loop.
+It:
+
+1. **Observes** payment events across a batch
+2. **Detects** individual failures and wider degradation patterns
+3. **Reasons** about the likely root cause
+4. **Chooses** an appropriate intervention
+5. **Checks** whether that action is allowed by policy
+6. **Executes** bounded recovery workflows
+7. **Learns from new customer responses**
+8. **Verifies outcomes** and updates recovered revenue
 
 ```text
 Observe
@@ -606,35 +608,9 @@ The agent has a clear objective:
 
 ---
 
-# Design Principles
-
-### Context over blind retries
-
-Different causes require different recovery actions.
-
-### Automation with boundaries
-
-The agent can act autonomously only within defined policies.
-
-### Customer intent matters
-
-Explicit opt-outs and decisions to stop are respected.
-
-### Verify outcomes
-
-Revenue is measured as recovered only after payment success is verified.
-
-### Explainable actions
-
-Every important decision and action is visible through workflow state and audit history.
-
----
-
 # The Goal
 
-Revenue recovery should not mean chasing every failed payment.
-
-The goal of ReviveAI is to create a smarter recovery loop:
+**The main objective is to recover revenue at risk intelligently and ensure users have a positive experience while completing the payment.**
 
 ```text
 Find what is slipping away
@@ -649,13 +625,20 @@ Verify the outcome
           ↓
 Measure what was recovered
 ```
-Ensuring a positive user payment completion experience  
 
 ---
+# Future Improvements
 
+1. **Multi-channel recovery** — Support policy-aware recovery through email, SMS, WhatsApp, and voice.
+2. **Support more recovery scenarios** — Expand beyond payment failures and checkout abandonment to subscriptions, overdue invoices, mandate failures, and B2B receivables.
+3. **Real-time monitoring** — Continuously detect payment degradation and trigger workflows as incidents emerge.
+4. **Advanced analytics** — Track recovery rates, intervention effectiveness, customer response patterns, and revenue leakage over time.
+5. **Production-grade scaling** — Add queues, persistent databases, authentication, role-based access, and monitoring for large-scale deployments.
+
+---
 <div align="center">
 
-# ReviveAI
+# Revive AI
 
 ### AI Revenue Recovery Agent
 
