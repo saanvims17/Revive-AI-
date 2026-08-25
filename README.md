@@ -254,7 +254,7 @@ When the reason is unknown, ReviveAI does not blindly retry the payment.
 
 The customer is asked to choose the relevant reason:
 
-<img width="500" height="450" alt="checkout issue " src="https://github.com/user-attachments/assets/e732b0f1-b301-45a4-9b35-4e507ba05a51" />
+<img width="500" height="400" alt="checkout issue " src="https://github.com/user-attachments/assets/e732b0f1-b301-45a4-9b35-4e507ba05a51" />
 
 Each answer moves the recovery case into a different workflow.
 
@@ -284,7 +284,7 @@ Customer completes payment
               ↓
 Payment is verified
 ```
-<img width="500" height="500" alt="schedule " src="https://github.com/user-attachments/assets/8716a2b5-da4f-49d2-9355-9763aa4faf05" />
+<img width="500" height="400" alt="schedule " src="https://github.com/user-attachments/assets/8716a2b5-da4f-49d2-9355-9763aa4faf05" />
 
 The customer chooses when they are ready rather than being repeatedly retried.
 
@@ -311,7 +311,7 @@ Fresh payment link is created
               ↓
 Customer can complete payment
 ```
-<img width="1616" height="988" alt="technical issue " src="https://github.com/user-attachments/assets/ce5edc45-5273-4d47-b51c-3b821d1bb5c1" />
+<img width="500" height="400" alt="technical issue " src="https://github.com/user-attachments/assets/ce5edc45-5273-4d47-b51c-3b821d1bb5c1" />
 
 The agent does not treat a temporary bank outage as a reason to stop recovery.
 
@@ -452,70 +452,12 @@ The AI layer helps determine:
 
 The recovery agent operates as a closed loop:
 
-```text
-┌──────────────┐
-│   OBSERVE    │
-│ Payment data │
-│ Incidents    │
-│ User actions │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│   DIAGNOSE   │
-│ Understand   │
-│ the likely   │
-│ cause        │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│    DECIDE    │
-│ Select the   │
-│ right next   │
-│ intervention │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│     ACT      │
-│ Execute only │
-│ allowed      │
-│ actions      │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│    VERIFY    │
-│ Check what   │
-│ actually     │
-│ happened     │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ ADAPT / STOP │
-│ Continue only│
-│ if allowed   │
-└──────────────┘
-```
+<img width="800" height="300" alt="AI AGENT" src="https://github.com/user-attachments/assets/82a424bf-af18-49b1-ab2a-8c70e46d9f39" />
+
 
 ### AI does not override policy.
 
-```text
-AI REASONING
-      ↓
-Diagnose + Recommend
-      ↓
-POLICY GUARDRAILS
-      ↓
-Check if action is allowed
-      ↓
-EXECUTE BOUNDED ACTION
-```
-
 This makes ReviveAI autonomous within clearly defined safety boundaries.
-
----
-
-# Customer Workflow
-
-The admin dashboard and customer workflow are intentionally separated.
 
 --- 
 # Getting Started
@@ -627,22 +569,6 @@ After the payment update/webhook:
 
 ---
 
-# 📸 Visuals
-
-Add your project screenshots and workflow diagrams here.
-
-## Traditional Recovery vs ReviveAI
-
-![Traditional Recovery vs ReviveAI](assets/traditional-vs-reviveai.png)
-
-## How ReviveAI Decides What to Do
-
-![ReviveAI Agent Decision Flow](assets/reviveai-decision-flow.png)
-
-> Place the images inside an `assets` folder in your repository and update the filenames above if needed.
-
----
-
 # 🎯 Why ReviveAI is Agentic
 
 ReviveAI is not just:
@@ -680,7 +606,7 @@ The agent has a clear objective:
 
 ---
 
-# 🧩 Design Principles
+# Design Principles
 
 ### Context over blind retries
 
@@ -704,7 +630,7 @@ Every important decision and action is visible through workflow state and audit 
 
 ---
 
-# 🎯 The Goal
+# The Goal
 
 Revenue recovery should not mean chasing every failed payment.
 
@@ -723,12 +649,13 @@ Verify the outcome
           ↓
 Measure what was recovered
 ```
+Ensuring a positive user payment completion experience  
 
 ---
 
 <div align="center">
 
-# ✦ ReviveAI
+# ReviveAI
 
 ### AI Revenue Recovery Agent
 
