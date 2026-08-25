@@ -1,12 +1,10 @@
 import 'dotenv/config';
-import { analyseWithAI } from "./recovery-agent.mjs";
+import { analyseWithAI } from "./recovery-agent.mjs"; 
 import { createServer } from 'node:http';
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
 import { createHash, createHmac, timingSafeEqual, randomBytes } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-
-
 
 
 console.log('Razorpay Key ID loaded:', !!process.env.RAZORPAY_KEY_ID);
@@ -357,9 +355,7 @@ function reconcileStoredPolicy(db) {
  return changed;
 }
 function applyCustomerFeedbackDecision(recovery, event, incidents) {
- // =====================================================
  // 1. HARD POLICY CHECK
- // =====================================================
  const hardStop = hardPolicyStatus(recovery);
 
 
@@ -386,16 +382,11 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 2. READ THE CUSTOMER'S CHOICE
- // =====================================================
  const reason = recovery.customerFeedback?.reason;
 
 
- // =====================================================
  // 3. INSUFFICIENT FUNDS / NEED MORE TIME
- // =====================================================
  if (
    reason === 'insufficient_funds' ||
    reason === 'need_more_time'
@@ -409,10 +400,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 4. CUSTOMER REPORTS BANK ISSUE
- // =====================================================
  if (reason === 'bank_issue') {
    const matchingIncident = hasMatchingIncident(
      event,
@@ -443,10 +431,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 5. GENERIC CUSTOMER TECHNICAL ISSUE
- // =====================================================
  if (reason === 'technical_problem') {
    const intervention = INTERVENTIONS.HUMAN_REVIEW;
 
@@ -457,10 +442,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 6. PAYMENT METHOD UNAVAILABLE
- // =====================================================
  if (
    reason === 'payment_method_issue' ||
    reason === 'payment_method_unavailable'
@@ -475,10 +457,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 7. CUSTOMER WANTS TO CONTINUE
- // =====================================================
  if (reason === 'continue') {
    // Hard policy was already rechecked above.
    const intervention =
@@ -491,10 +470,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 8. CUSTOMER CHANGED THEIR MIND
- // =====================================================
  if (reason === 'changed_mind') {
    const intervention = INTERVENTIONS.STOP_RECOVERY;
 
@@ -506,10 +482,7 @@ function applyCustomerFeedbackDecision(recovery, event, incidents) {
    };
  }
 
-
- // =====================================================
  // 9. UNKNOWN / MISSING RESPONSE
- // =====================================================
  // Never automatically stop recovery or send it to human
  // review merely because the reason is unclear.
  const intervention = INTERVENTIONS.ASK_CUSTOMER_REASON;
@@ -785,13 +758,8 @@ async function createRecoveryLinkOnce(
  recovery,
  source
 ) {
- // ================================================
  // 1. NEVER CREATE A LINK FOR A HARD-STOPPED CASE
- // ================================================
-
-
  const policyStatus = hardPolicyStatus(recovery);
-
 
  if (
    policyStatus === 'STOPPED' ||
@@ -803,11 +771,7 @@ async function createRecoveryLinkOnce(
    };
  }
 
-
- // ================================================
  // 2. REUSE AN EXISTING READY LINK
- // ================================================
-
 
  if (
    recovery.paymentLink?.id &&
@@ -821,12 +785,8 @@ async function createRecoveryLinkOnce(
    };
  }
 
-
- // ================================================
  // 3. DO NOT DUPLICATE AN IN-FLIGHT REQUEST
- // ================================================
-
-
+ 
  if (linkCreationInFlight.has(recovery.id)) {
    return {
      ok: true,
@@ -834,12 +794,8 @@ async function createRecoveryLinkOnce(
    };
  }
 
-
- // ================================================
  // 4. RATE-LIMIT COOLDOWN
- // ================================================
-
-
+ 
  const rateLimitRetryAt =
    recovery.linkGeneration?.retryAfter
      ? new Date(
@@ -864,10 +820,7 @@ async function createRecoveryLinkOnce(
  }
 
 
- // ================================================
  // 5. PERSISTENT GENERATION GUARD
- // ================================================
-
 
  if (
    recovery.linkGeneration?.state === 'CREATING'
@@ -890,11 +843,6 @@ async function createRecoveryLinkOnce(
    }
 
 
-   // The generation was never resolved (state:'CREATING' persisted,
-   // but the process likely crashed before Razorpay responded).
-   // Do NOT return pending forever — fall through to step 6, which
-   // reuses the existing idempotencyKey/retryCount and starts a
-   // fresh attempt.
    log(
      db,
      `${recovery.orderId}: stale link-generation state detected ` +
@@ -903,11 +851,7 @@ async function createRecoveryLinkOnce(
    );
  }
 
-
- // ================================================
  // 6. START / RETRY LINK GENERATION
- // ================================================
-
 
  linkCreationInFlight.add(recovery.id);
 
@@ -975,19 +919,12 @@ async function createRecoveryLinkOnce(
 
 
  try {
-   // ================================================
    // 7. EXACTLY ONE PROVIDER CALL
-   // ================================================
-
 
    const link =
      await createPaymentLink(recovery);
 
-
-   // ================================================
    // 8. SAVE SUCCESS
-   // ================================================
-
 
    recovery.paymentLink = link;
 
@@ -1060,10 +997,8 @@ async function createRecoveryLinkOnce(
 
 
  } catch (error) {
-   // ================================================
+ 
    // 9. HANDLE PROVIDER FAILURE
-   // ================================================
-
 
    const isRateLimited =
      error.rateLimited === true ||
@@ -1136,7 +1071,6 @@ async function createRecoveryLinkOnce(
 
 
    } else {
-     // Non-429 provider failure.
      // Keep recovery alive, but don't repeatedly retry
      // automatically without a specific retry policy.
      recovery.linkGeneration.retryAfter =
@@ -1167,10 +1101,7 @@ async function createRecoveryLinkOnce(
 
 
  } finally {
-   // ================================================
    // 10. RELEASE IN-MEMORY LOCK
-   // ================================================
-
 
    linkCreationInFlight.delete(
      recovery.id
@@ -1184,10 +1115,8 @@ async function processDueRecoveries() {
 
  const MAX_RATE_LIMIT_RETRIES = 3;
 
-
- // ==========================================
  // 1. PROCESS DUE SCHEDULED RECOVERIES
- // ==========================================
+
  const scheduledRecoveries = db.recoveries.filter(
    recovery =>
      recovery.status === 'SCHEDULED' &&
@@ -1223,9 +1152,8 @@ async function processDueRecoveries() {
  }
 
 
- // ==========================================
  // 1b. RECOVER CASES STUCK IN A STALE CREATING STATE
- // ==========================================
+
  // Covers crashes between save(db) marking CREATING and the
  // Razorpay response, which would otherwise wedge the case forever
  // (customers only reach createRecoveryLinkOnce again via the
@@ -1266,10 +1194,7 @@ async function processDueRecoveries() {
    );
  }
 
-
- // ==========================================
  // 2. RETRY CASES AFTER RAZORPAY 429 COOLDOWN
- // ==========================================
  const rateLimitedRecoveries = db.recoveries.filter(
    recovery =>
      recovery.status === 'READY_TO_GENERATE_LINK' &&
@@ -1325,9 +1250,8 @@ async function processDueRecoveries() {
  }
 
 
- // ==========================================
  // 3. HANDLE CASES THAT EXHAUSTED ALL RETRIES
- // ==========================================
+ 
  for (const recovery of db.recoveries) {
    const retryCount = Number(
      recovery.linkGeneration?.retryCount || 0
@@ -1439,10 +1363,9 @@ createServer(async (req, res) => {
            };
          }
   
-         // ------------------------------------------------
+  
          // SERVER-SIDE STATUS MAPPING
          // The LLM recommends. The server controls workflow.
-         // ------------------------------------------------
   
          // AI supplies diagnosis/evidence only. Routing below is fully deterministic.
          const status = 'HUMAN_REVIEW';
@@ -1623,9 +1546,9 @@ return baseRecovery;
        });
      }
   
-     // =====================================================
+   
      // SCHEDULE PAYMENT
-     // =====================================================
+
      if (action === 'schedule') {
        if (recovery.status !== 'AWAITING_SCHEDULE') {
          return respond(res, 409, {
@@ -1673,9 +1596,8 @@ return baseRecovery;
        );
      }
   
-     // =====================================================
      // CREATE NEW PAYMENT LINK
-     // =====================================================
+    
      if (action === 'continue') {
        if (recovery.status !== 'READY_TO_GENERATE_LINK') {
          return respond(res, 409, {
@@ -1707,9 +1629,8 @@ return baseRecovery;
      }
 
 
-     // =====================================================
      // CONFIRM AFTER A RESOLVED BANK / TECHNICAL INCIDENT
-     // =====================================================
+
      if (action === 'confirm') {
        if (recovery.status !== 'AWAITING_CUSTOMER_CONFIRMATION') {
          return respond(res, 409, { error: 'This recovery is not awaiting customer confirmation' });
@@ -1733,10 +1654,9 @@ return baseRecovery;
        if (!outcome.ok) return respond(res, 409, { error: outcome.error || 'Payment link could not be created' });
        return respond(res, 200, customerPortalState(db, userId));
      }
-  
-     // =====================================================
+ 
      // CUSTOMER FEEDBACK
-     // =====================================================
+   
      if (action === 'feedback') {
        if (recovery.status !== 'AWAITING_CUSTOMER_RESPONSE') {
          return respond(res, 409, {
