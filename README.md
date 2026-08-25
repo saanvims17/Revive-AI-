@@ -450,7 +450,7 @@ This allows ReviveAI to demonstrate **measured revenue recovered across a batch*
 
 Every important action in the recovery workflow is recorded.
 
-<img width="400" height="800" alt="Audit Trail" src="https://github.com/user-attachments/assets/00910ec6-dffb-4f62-ab8d-324d49e341e1" />
+<img width="400" height="600" alt="Audit Trail" src="https://github.com/user-attachments/assets/00910ec6-dffb-4f62-ab8d-324d49e341e1" />
 
 
 
