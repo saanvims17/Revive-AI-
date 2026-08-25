@@ -1,4 +1,4 @@
-<img width="1834" height="1112" alt="System Architecture " src="https://github.com/user-attachments/assets/9a1add48-1fc0-4e6f-9262-65a6a69b5780" /><p align="center">
+<p align="center">
   <img src="/data/openai.png" height="55" alt="OpenAI" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/razorpay" height="55" alt="Razorpay" />
