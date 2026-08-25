@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.example
+
+# macOS files
+.DS_Store
+
+# Generated output files
+outputs/

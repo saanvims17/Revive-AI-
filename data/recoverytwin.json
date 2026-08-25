@@ -1,0 +1,2640 @@
+{
+  "events": [
+    {
+      "id": "ORD-1001",
+      "customer": "CUS-201",
+      "userId": "USR-1001",
+      "amount": 1167,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1002",
+      "customer": "CUS-202",
+      "userId": "USR-1002",
+      "amount": 1634,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1003",
+      "customer": "CUS-203",
+      "userId": "USR-1003",
+      "amount": 2101,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1004",
+      "customer": "CUS-204",
+      "userId": "USR-1004",
+      "amount": 2568,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1005",
+      "customer": "CUS-205",
+      "userId": "USR-1005",
+      "amount": 3035,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1006",
+      "customer": "CUS-206",
+      "userId": "USR-1006",
+      "amount": 3502,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1007",
+      "customer": "CUS-207",
+      "userId": "USR-1007",
+      "amount": 3969,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1008",
+      "customer": "CUS-208",
+      "userId": "USR-1008",
+      "amount": 4436,
+      "failureCode": "bank_error",
+      "issuer": "Northstar Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1009",
+      "customer": "CUS-209",
+      "userId": "USR-1009",
+      "amount": 4903,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1010",
+      "customer": "CUS-210",
+      "userId": "USR-1010",
+      "amount": 5370,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1011",
+      "customer": "CUS-211",
+      "userId": "USR-1011",
+      "amount": 5837,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1012",
+      "customer": "CUS-212",
+      "userId": "USR-1012",
+      "amount": 6304,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 2,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1013",
+      "customer": "CUS-213",
+      "userId": "USR-1013",
+      "amount": 6771,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1014",
+      "customer": "CUS-214",
+      "userId": "USR-1014",
+      "amount": 7238,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 1,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1015",
+      "customer": "CUS-215",
+      "userId": "USR-1015",
+      "amount": 7705,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1016",
+      "customer": "CUS-216",
+      "userId": "USR-1016",
+      "amount": 8172,
+      "failureCode": "checkout_timeout",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.7.1",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1017",
+      "customer": "CUS-217",
+      "userId": "USR-1017",
+      "amount": 8639,
+      "failureCode": "insufficient_funds",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1018",
+      "customer": "CUS-218",
+      "userId": "USR-1018",
+      "amount": 9106,
+      "failureCode": "abandoned",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1019",
+      "customer": "CUS-219",
+      "userId": "USR-1019",
+      "amount": 873,
+      "failureCode": "declined",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1020",
+      "customer": "CUS-220",
+      "userId": "USR-1020",
+      "amount": 1340,
+      "failureCode": "insufficient_funds",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1021",
+      "customer": "CUS-221",
+      "userId": "USR-1021",
+      "amount": 1807,
+      "failureCode": "abandoned",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1022",
+      "customer": "CUS-222",
+      "userId": "USR-1022",
+      "amount": 2274,
+      "failureCode": "declined",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1023",
+      "customer": "CUS-223",
+      "userId": "USR-1023",
+      "amount": 2741,
+      "failureCode": "insufficient_funds",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1024",
+      "customer": "CUS-224",
+      "userId": "USR-1024",
+      "amount": 3208,
+      "failureCode": "abandoned",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 2,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1025",
+      "customer": "CUS-225",
+      "userId": "USR-1025",
+      "amount": 3675,
+      "failureCode": "declined",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1026",
+      "customer": "CUS-226",
+      "userId": "USR-1026",
+      "amount": 4142,
+      "failureCode": "insufficient_funds",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1027",
+      "customer": "CUS-227",
+      "userId": "USR-1027",
+      "amount": 4609,
+      "failureCode": "abandoned",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1028",
+      "customer": "CUS-228",
+      "userId": "USR-1028",
+      "amount": 5076,
+      "failureCode": "declined",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 1,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1029",
+      "customer": "CUS-229",
+      "userId": "USR-1029",
+      "amount": 5543,
+      "failureCode": "insufficient_funds",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    },
+    {
+      "id": "ORD-1030",
+      "customer": "CUS-230",
+      "userId": "USR-1030",
+      "amount": 6010,
+      "failureCode": "abandoned",
+      "issuer": "Meridian Bank",
+      "checkoutVersion": "v2.6.4",
+      "attempts": 1,
+      "contacts": 0,
+      "optedOut": false
+    }
+  ],
+  "incidents": [
+    {
+      "id": "issuer_Northstar_Bank",
+      "type": "issuer_degradation",
+      "issuer": "Northstar Bank",
+      "title": "Issuer degradation · Northstar Bank",
+      "detail": "8 bank errors detected in the batch. Individual outreach suppressed.",
+      "status": "resolved",
+      "resolvedAt": "2026-08-25T13:53:11.928Z"
+    },
+    {
+      "id": "checkout_v2_7_1",
+      "type": "checkout_degradation",
+      "checkoutVersion": "v2.7.1",
+      "title": "Checkout degradation · version v2.7.1",
+      "detail": "8 checkout timeouts detected. Merchant incident opened.",
+      "status": "resolved",
+      "resolvedAt": "2026-08-25T13:53:13.930Z"
+    }
+  ],
+  "recoveries": [
+    {
+      "id": "rec_7a343b895c5e",
+      "orderId": "ORD-1001",
+      "customerId": "CUS-201",
+      "userId": "USR-1001",
+      "customerName": "Ananya",
+      "amount": 1167,
+      "cause": "Temporary issuer or bank degradation affecting Northstar Bank",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active batch incident matches issuer Northstar Bank",
+        "recoveryContext.attemptCount is 1 of 2",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is bank_error, and there is an active issuer degradation incident matching Northstar Bank exactly. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "PlRoeOeNJPBgoAnh1qcDNzOk",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1001",
+        "customer": "CUS-201",
+        "userId": "USR-1001",
+        "amount": 1167,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_3d38",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873053_0115",
+          "at": "2026-08-25T13:51:13.053Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_60f7880dea87",
+      "orderId": "ORD-1002",
+      "customerId": "CUS-202",
+      "userId": "USR-1002",
+      "customerName": "Kabir",
+      "amount": 1634,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active issuer degradation incident matches Northstar Bank",
+        "recoveryContext.attemptCount is 1 of 2",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is bank_error, and an active issuer incident matches Northstar Bank. The payment is eligible for recovery because the customer has not opted out, the order is valid, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "FpS2lAl_6K1mjb_yZ-aM7_18",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1002",
+        "customer": "CUS-202",
+        "userId": "USR-1002",
+        "amount": 1634,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_e219",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873225_775c",
+          "at": "2026-08-25T13:51:13.225Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_45fdda388cd9",
+      "orderId": "ORD-1003",
+      "customerId": "CUS-203",
+      "userId": "USR-1003",
+      "customerName": "Meera",
+      "amount": 2101,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active batch incident matches issuer Northstar Bank",
+        "recoveryContext.attemptCount is 1 and maxAttempts is 2",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is bank_error, and there is an active issuer degradation incident matching Northstar Bank. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "bvR7RbY0_xQ8cZWW155qgQTd",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1003",
+        "customer": "CUS-203",
+        "userId": "USR-1003",
+        "amount": 2101,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_1ead",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873500_fa3b",
+          "at": "2026-08-25T13:51:13.500Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_d048ba5c99fb",
+      "orderId": "ORD-1004",
+      "customerId": "CUS-204",
+      "userId": "USR-1004",
+      "customerName": "Vihaan",
+      "amount": 2568,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active issuer incident matches Northstar Bank",
+        "attemptCount is 1 and maxAttempts is 2",
+        "optedOut is false and orderValid is true",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 98,
+      "reasoning": "The payment failed with bank_error, and there is an active issuer degradation incident matching Northstar Bank. Recovery limits and customer status do not require escalation.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "a9qFKWfPFynZTBQgSQXRM6-I",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1004",
+        "customer": "CUS-204",
+        "userId": "USR-1004",
+        "amount": 2568,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_594c",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873248_52ff",
+          "at": "2026-08-25T13:51:13.248Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_da9e87abf327",
+      "orderId": "ORD-1005",
+      "customerId": "CUS-205",
+      "userId": "USR-1005",
+      "customerName": "Diya",
+      "amount": 3035,
+      "cause": "Temporary issuer degradation affecting Northstar Bank",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active batch incident matches issuer Northstar Bank",
+        "The checkout incident is for v2.7.1, while this payment used v2.6.4",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failed with bank_error, and there is an active issuer degradation incident matching Northstar Bank. The checkout incident concerns a different version and is not attributed to this payment.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "FYZ1lwfWIPtK7XvSB9KIXOd_",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1005",
+        "customer": "CUS-205",
+        "userId": "USR-1005",
+        "amount": 3035,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_9d40",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873171_0924",
+          "at": "2026-08-25T13:51:13.171Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_05d50b338d63",
+      "orderId": "ORD-1006",
+      "customerId": "CUS-206",
+      "userId": "USR-1006",
+      "customerName": "Arjun",
+      "amount": 3502,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active issuer incident matches Northstar Bank",
+        "recoveryContext.attemptCount is 1 of a maximum of 2",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 98,
+      "reasoning": "The payment failed with bank_error, and there is an active issuer degradation incident matching Northstar Bank. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "UrtDzou2L6gYx965daW123qU",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1006",
+        "customer": "CUS-206",
+        "userId": "USR-1006",
+        "amount": 3502,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_96f5",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665874223_b036",
+          "at": "2026-08-25T13:51:14.223Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_004c8062c7ba",
+      "orderId": "ORD-1007",
+      "customerId": "CUS-207",
+      "userId": "USR-1007",
+      "customerName": "Isha",
+      "amount": 3969,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active issuer incident matches Northstar Bank",
+        "The payment has 1 attempt out of a maximum of 2",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 98,
+      "reasoning": "The payment failed with bank_error, and there is an active issuer degradation incident matching Northstar Bank. The checkout incident concerns a different checkout version and is not relevant.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "_zIHQx_k4OPA5UI-LKRh-nGn",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1007",
+        "customer": "CUS-207",
+        "userId": "USR-1007",
+        "amount": 3969,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_9838",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665872682_8ef2",
+          "at": "2026-08-25T13:51:12.682Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_81524f9cecd8",
+      "orderId": "ORD-1008",
+      "customerId": "CUS-208",
+      "userId": "USR-1008",
+      "customerName": "Aarav",
+      "amount": 4436,
+      "cause": "Temporary issuer or bank degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is bank_error",
+        "paymentEvent.issuer is Northstar Bank",
+        "An active batch incident for Northstar Bank reports issuer degradation",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is bank_error, and there is an active issuer degradation incident matching Northstar Bank.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "fDwd8Xz65xWQjScqDbUz0YIp",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1008",
+        "customer": "CUS-208",
+        "userId": "USR-1008",
+        "amount": 4436,
+        "failureCode": "bank_error",
+        "issuer": "Northstar Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665991928_8c64",
+          "at": "2026-08-25T13:53:11.928Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665874527_313e",
+          "at": "2026-08-25T13:51:14.527Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_6af98c58b026",
+      "orderId": "ORD-1009",
+      "customerId": "CUS-209",
+      "userId": "USR-1009",
+      "customerName": "Ananya",
+      "amount": 4903,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "paymentEvent.checkoutVersion is v2.7.1",
+        "An active checkout incident exists for checkoutVersion v2.7.1",
+        "attemptCount is 1 and maxAttempts is 2",
+        "optedOut is false and orderValid is true",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is checkout_timeout, and an active checkout degradation incident exactly matches checkout version v2.7.1. Recovery limits and account policies do not block reassessment.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "eyujnmbbs7f1E-LGdam-QJf9",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1009",
+        "customer": "CUS-209",
+        "userId": "USR-1009",
+        "amount": 4903,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993930_1373",
+          "at": "2026-08-25T13:53:13.930Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873106_9e69",
+          "at": "2026-08-25T13:51:13.106Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_6692fdbdf2a2",
+      "orderId": "ORD-1010",
+      "customerId": "CUS-210",
+      "userId": "USR-1010",
+      "customerName": "Kabir",
+      "amount": 5370,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "paymentEvent.checkoutVersion is v2.7.1",
+        "An active checkout incident exists for checkoutVersion v2.7.1",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failed with checkout_timeout, and there is an active checkout degradation incident matching checkout version v2.7.1.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "Kk9l3VW_-_uDpEWd756YmaZ2",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1010",
+        "customer": "CUS-210",
+        "userId": "USR-1010",
+        "amount": 5370,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993930_0d61",
+          "at": "2026-08-25T13:53:13.930Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665872678_3e64",
+          "at": "2026-08-25T13:51:12.678Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_0b47629f65b7",
+      "orderId": "ORD-1011",
+      "customerId": "CUS-211",
+      "userId": "USR-1011",
+      "customerName": "Meera",
+      "amount": 5837,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "paymentEvent.checkoutVersion is v2.7.1",
+        "An active checkout incident matches checkoutVersion v2.7.1",
+        "recoveryContext.attemptCount is 1 of 2 maximum attempts",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failed with checkout_timeout, and there is an active checkout degradation incident matching checkout version v2.7.1. Recovery limits have not been reached, and the order is valid.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "DOfGGoGkwGQaXNOn_c8Hp7Dp",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1011",
+        "customer": "CUS-211",
+        "userId": "USR-1011",
+        "amount": 5837,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993930_063f",
+          "at": "2026-08-25T13:53:13.930Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873975_6ca5",
+          "at": "2026-08-25T13:51:13.975Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_6005e37f8f21",
+      "orderId": "ORD-1012",
+      "customerId": "CUS-212",
+      "userId": "USR-1012",
+      "customerName": "Vihaan",
+      "amount": 6304,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "An active checkout degradation incident matches checkoutVersion v2.7.1",
+        "recoveryContext.attemptCount is 2, equal to maxAttempts 2",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "escalate",
+      "confidence": 98,
+      "reasoning": "The payment failed with checkout_timeout and an active incident matches checkout version v2.7.1. However, the maximum recovery attempt limit has been reached, so no further automated recovery attempt is allowed.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 2,
+        "contacts": 0
+      },
+      "attemptCount": 2,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "6DkUIG7chONRFsuR3vKRd8ya",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1012",
+        "customer": "CUS-212",
+        "userId": "USR-1012",
+        "amount": 6304,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 2,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993931_a994",
+          "at": "2026-08-25T13:53:13.931Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873356_95fb",
+          "at": "2026-08-25T13:51:13.356Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_1f0b27245c1f",
+      "orderId": "ORD-1013",
+      "customerId": "CUS-213",
+      "userId": "USR-1013",
+      "customerName": "Diya",
+      "amount": 6771,
+      "cause": "Temporary checkout degradation affecting checkout version v2.7.1",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "paymentEvent.checkoutVersion is v2.7.1",
+        "An active checkout degradation incident exists for checkoutVersion v2.7.1",
+        "recoveryContext.attemptCount is 1 and maxAttempts is 2",
+        "The order is valid and the customer has not opted out",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 98,
+      "reasoning": "The payment failureCode is checkout_timeout, and an active checkout degradation incident matches checkoutVersion v2.7.1. Recovery limits do not require escalation because 1 attempt has been made out of a maximum of 2.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "ZraBUNQu_yvtMpmkkqR_sXeG",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1013",
+        "customer": "CUS-213",
+        "userId": "USR-1013",
+        "amount": 6771,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993931_2575",
+          "at": "2026-08-25T13:53:13.931Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873656_7bca",
+          "at": "2026-08-25T13:51:13.656Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_21eae72bb42d",
+      "orderId": "ORD-1014",
+      "customerId": "CUS-214",
+      "userId": "USR-1014",
+      "customerName": "Arjun",
+      "amount": 7238,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "An active checkout incident matches checkoutVersion v2.7.1",
+        "attemptCount 1 is below maxAttempts 2",
+        "The customer has not opted out and the order is valid",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failure code is checkout_timeout, and there is an active checkout degradation incident matching checkout version v2.7.1. Recovery limits and policy conditions do not block further recovery.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 1
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "UaCfmx69gS8r3gWjwdUhpZ4Q",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1014",
+        "customer": "CUS-214",
+        "userId": "USR-1014",
+        "amount": 7238,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 1,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993931_cba3",
+          "at": "2026-08-25T13:53:13.931Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665872741_8eba",
+          "at": "2026-08-25T13:51:12.741Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_b1fd2fe352cf",
+      "orderId": "ORD-1015",
+      "customerId": "CUS-215",
+      "userId": "USR-1015",
+      "customerName": "Isha",
+      "amount": 7705,
+      "cause": "Temporary checkout or platform degradation",
+      "action": "Customer confirmed payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "paymentEvent.checkoutVersion is v2.7.1",
+        "An active checkout incident exists for checkoutVersion v2.7.1",
+        "Recovery attempts are 1 of a maximum 2",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failed with checkout_timeout, and there is an active checkout degradation incident matching checkout version v2.7.1.",
+      "status": "RECOVERY_LINK_READY",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 1,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": "2026-08-25T13:53:38.670Z",
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": {
+        "status": "created",
+        "id": "plink_TU1fxo2zDHfR87",
+        "shortUrl": "https://rzp.io/rzp/lNoB2GoK",
+        "referenceId": "revive_2fe352cf_mt8q6v7r",
+        "createdAt": "2026-08-25T13:53:38.670Z"
+      },
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "ijk-4yYfAiUy0pWwIgMLnltH",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1015",
+        "customer": "CUS-215",
+        "userId": "USR-1015",
+        "amount": 7705,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "GENERATE_AND_SEND_NEW_LINK",
+      "customerNotifications": [
+        {
+          "id": "notice_1787666018670_b574",
+          "at": "2026-08-25T13:53:38.670Z",
+          "type": "link_created",
+          "message": "Here is your link to finish your payment."
+        },
+        {
+          "id": "notice_1787665993931_6c2c",
+          "at": "2026-08-25T13:53:13.931Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873583_e6d1",
+          "at": "2026-08-25T13:51:13.583Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ],
+      "linkGeneration": {
+        "state": "COMPLETED",
+        "idempotencyKey": "rt_b1fd2fe352cf_incidentconf_1787666017669_jq7hs",
+        "source": "incident_confirmation",
+        "startedAt": "2026-08-25T13:53:37.669Z",
+        "completedAt": "2026-08-25T13:53:38.670Z",
+        "failedAt": null,
+        "error": null,
+        "rateLimited": false,
+        "retryAfter": null,
+        "retryCount": 0
+      }
+    },
+    {
+      "id": "rec_d34606b822d3",
+      "orderId": "ORD-1016",
+      "customerId": "CUS-216",
+      "userId": "USR-1016",
+      "customerName": "Aarav",
+      "amount": 8172,
+      "cause": "Temporary checkout or platform degradation affecting checkout version v2.7.1",
+      "action": "Ask customer to confirm payment after incident resolution",
+      "evidence": [
+        "paymentEvent.failureCode is checkout_timeout",
+        "An active checkout incident matches checkoutVersion v2.7.1",
+        "recoveryContext.attemptCount is 1 of a maximum 2",
+        "The order is valid and automated recovery is not opted out",
+        "Matching active technical incident; customer will be contacted after resolution"
+      ],
+      "aiDecision": "wait",
+      "confidence": 99,
+      "reasoning": "The payment failed with checkout_timeout, and an active checkout degradation incident exactly matches checkout version v2.7.1. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_CONFIRMATION",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "NSvvL0Uz6rBpYjpvQ1YzxYlT",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1016",
+        "customer": "CUS-216",
+        "userId": "USR-1016",
+        "amount": 8172,
+        "failureCode": "checkout_timeout",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.7.1",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "WAIT_AND_RETRY_AFTER_RESOLUTION",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665993931_b417",
+          "at": "2026-08-25T13:53:13.931Z",
+          "type": "info",
+          "message": "The payment issue is resolved. Please confirm whether you would like to complete your payment."
+        },
+        {
+          "id": "notice_1787665873063_8e18",
+          "at": "2026-08-25T13:51:13.063Z",
+          "type": "info",
+          "message": "We're aware of a temporary payment issue. We'll let you know once it's resolved and send you a new payment link."
+        }
+      ]
+    },
+    {
+      "id": "rec_c4250d7adbd9",
+      "orderId": "ORD-1017",
+      "customerId": "CUS-217",
+      "userId": "USR-1017",
+      "customerName": "Ananya",
+      "amount": 8639,
+      "cause": "Customer currently has insufficient funds or a payment timing issue",
+      "action": "Schedule payment at customer-selected time",
+      "evidence": [
+        "paymentEvent.failureCode is insufficient_funds",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.attemptCount is 1 and maxAttempts is 2"
+      ],
+      "aiDecision": "act",
+      "confidence": 98,
+      "reasoning": "The payment failure code is insufficient_funds. The customer has not opted out, the order is valid, and the attempt limit has not been reached.",
+      "status": "SCHEDULED",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": "2026-08-27T13:52:00.000Z",
+      "customerFeedback": null,
+      "recoveryToken": "5JLxczOG_S_uSYaCkQGq2zmv",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1017",
+        "customer": "CUS-217",
+        "userId": "USR-1017",
+        "amount": 8639,
+        "failureCode": "insufficient_funds",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "SCHEDULE_PAYMENT",
+      "customerNotifications": [
+        {
+          "id": "notice_1787665972379_2dd5",
+          "at": "2026-08-25T13:52:52.379Z",
+          "type": "info",
+          "message": "Payment recovery scheduled for 8/27/2026, 7:22:00 PM."
+        }
+      ]
+    },
+    {
+      "id": "rec_23af5e5d58e6",
+      "orderId": "ORD-1018",
+      "customerId": "CUS-218",
+      "userId": "USR-1018",
+      "customerName": "Kabir",
+      "amount": 9106,
+      "cause": "Checkout abandonment",
+      "action": "Escalate technical issue for human review",
+      "evidence": [
+        "paymentEvent.failureCode is abandoned",
+        "No active incident matches issuer Meridian Bank",
+        "No active incident matches checkout version v2.6.4",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.optedOut is false",
+        "Customer feedback: technical_problem"
+      ],
+      "aiDecision": "act",
+      "confidence": 97,
+      "reasoning": "The payment failure code is abandoned. No active incident matches the payment's issuer or checkout version, and the order is valid with automated recovery permitted.",
+      "status": "HUMAN_REVIEW",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": {
+        "reason": "technical_problem",
+        "note": "",
+        "paymentMethod": "",
+        "preferredProvider": "",
+        "whatHappened": "",
+        "submittedAt": "2026-08-25T13:52:09.068Z"
+      },
+      "recoveryToken": "fxZXxqM2uEHqRu9ZIak2W_fv",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1018",
+        "customer": "CUS-218",
+        "userId": "USR-1018",
+        "amount": 9106,
+        "failureCode": "abandoned",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "HUMAN_REVIEW"
+    },
+    {
+      "id": "rec_bb1ea5e2dc0c",
+      "orderId": "ORD-1019",
+      "customerId": "CUS-219",
+      "userId": "USR-1019",
+      "customerName": "Meera",
+      "amount": 873,
+      "cause": "Payment was declined by the payment provider",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is declined",
+        "paymentEvent.issuer is Meridian Bank, with no matching active issuer incident",
+        "paymentEvent.checkoutVersion is v2.6.4, with no matching active checkout incident",
+        "recoveryContext.optedOut is false and orderValid is true",
+        "attemptCount is 1 of a maximum 2"
+      ],
+      "aiDecision": "act",
+      "confidence": 95,
+      "reasoning": "The authoritative failure code is declined. No active incident matches Meridian Bank or checkout version v2.6.4, and automated recovery is permitted because the order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "CyKiTU7lQR5fMlJbL755lXcQ",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1019",
+        "customer": "CUS-219",
+        "userId": "USR-1019",
+        "amount": 873,
+        "failureCode": "declined",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_18e2dfa980c8",
+      "orderId": "ORD-1020",
+      "customerId": "CUS-220",
+      "userId": "USR-1020",
+      "customerName": "Vihaan",
+      "amount": 1340,
+      "cause": "Customer-level insufficient funds or payment timing issue",
+      "action": "Schedule payment at customer-selected time",
+      "evidence": [
+        "paymentEvent.failureCode is insufficient_funds",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.attemptCount is 1 of 2 maximum attempts"
+      ],
+      "aiDecision": "act",
+      "confidence": 98,
+      "reasoning": "The payment failure code is insufficient_funds, and the order is valid with automated recovery permitted.",
+      "status": "AWAITING_SCHEDULE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "IX4boRyaNgEa9sJOD4kNHytq",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1020",
+        "customer": "CUS-220",
+        "userId": "USR-1020",
+        "amount": 1340,
+        "failureCode": "insufficient_funds",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "SCHEDULE_PAYMENT"
+    },
+    {
+      "id": "rec_3dc61d844652",
+      "orderId": "ORD-1021",
+      "customerId": "CUS-221",
+      "userId": "USR-1021",
+      "customerName": "Diya",
+      "amount": 1807,
+      "cause": "Checkout abandonment",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is abandoned",
+        "paymentEvent.issuer is Meridian Bank, while the active issuer incident is for Northstar Bank",
+        "paymentEvent.checkoutVersion is v2.6.4, while the active checkout incident is for v2.7.1",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.optedOut is false"
+      ],
+      "aiDecision": "act",
+      "confidence": 96,
+      "reasoning": "The payment failure code is abandoned. No active incident matches the payment's issuer or checkout version, and the order is valid with automated recovery enabled.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "3WlgBCNHemiW3hBRnevXV0II",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1021",
+        "customer": "CUS-221",
+        "userId": "USR-1021",
+        "amount": 1807,
+        "failureCode": "abandoned",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_6df044710976",
+      "orderId": "ORD-1022",
+      "customerId": "CUS-222",
+      "userId": "USR-1022",
+      "customerName": "Arjun",
+      "amount": 2274,
+      "cause": "Payment declined by the issuer",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is declined",
+        "paymentEvent.issuer is Meridian Bank",
+        "No active batch incident matches Meridian Bank",
+        "No active batch incident matches checkoutVersion v2.6.4",
+        "attemptCount is 1 and maxAttempts is 2",
+        "optedOut is false and orderValid is true"
+      ],
+      "aiDecision": "act",
+      "confidence": 95,
+      "reasoning": "The authoritative failure code is declined. No active incident matches Meridian Bank or checkout version v2.6.4, and recovery limits and policy constraints do not block action.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "srtRGjN0pgAFzeVbyHqUknYS",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1022",
+        "customer": "CUS-222",
+        "userId": "USR-1022",
+        "amount": 2274,
+        "failureCode": "declined",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_831d9e938945",
+      "orderId": "ORD-1023",
+      "customerId": "CUS-223",
+      "userId": "USR-1023",
+      "customerName": "Isha",
+      "amount": 2741,
+      "cause": "Customer-level insufficient funds or payment timing issue",
+      "action": "Schedule payment at customer-selected time",
+      "evidence": [
+        "paymentEvent.failureCode is insufficient_funds",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.attemptCount is 1 of a maximum 2"
+      ],
+      "aiDecision": "act",
+      "confidence": 98,
+      "reasoning": "The payment failure code is insufficient_funds. The customer has not opted out, the order is valid, and the attempt limit has not been reached.",
+      "status": "AWAITING_SCHEDULE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "Q10bWKWzJQ5Q_dKD6M5fOnm6",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1023",
+        "customer": "CUS-223",
+        "userId": "USR-1023",
+        "amount": 2741,
+        "failureCode": "insufficient_funds",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "SCHEDULE_PAYMENT"
+    },
+    {
+      "id": "rec_50d9f36a53d0",
+      "orderId": "ORD-1024",
+      "customerId": "CUS-224",
+      "userId": "USR-1024",
+      "customerName": "Aarav",
+      "amount": 3208,
+      "cause": "Checkout abandonment",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is abandoned",
+        "recoveryContext.attemptCount is 2 and maxAttempts is 2",
+        "No active incident matches issuer Meridian Bank or checkout version v2.6.4"
+      ],
+      "aiDecision": "escalate",
+      "confidence": 98,
+      "reasoning": "The payment failure code is abandoned. The maximum recovery attempt limit has been reached, so no further automated recovery attempt is allowed. The listed incidents do not match this payment's issuer or checkout version.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 2,
+        "contacts": 0
+      },
+      "attemptCount": 2,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "5MRSw4HBX7h6SFVnLgHB9WHl",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1024",
+        "customer": "CUS-224",
+        "userId": "USR-1024",
+        "amount": 3208,
+        "failureCode": "abandoned",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 2,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_a4982d651a23",
+      "orderId": "ORD-1025",
+      "customerId": "CUS-225",
+      "userId": "USR-1025",
+      "customerName": "Ananya",
+      "amount": 3675,
+      "cause": "Payment declined by the issuer",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is declined",
+        "paymentEvent.issuer is Meridian Bank",
+        "The active issuer incident is for Northstar Bank, not Meridian Bank",
+        "The active checkout incident is for version v2.7.1, while this payment used v2.6.4",
+        "recoveryContext.attemptCount is 1 of 2",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true"
+      ],
+      "aiDecision": "act",
+      "confidence": 95,
+      "reasoning": "The payment failure code is declined. No active incident matches Meridian Bank, and the checkout incident applies to version v2.7.1 rather than this payment's v2.6.4. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "66I5FXCLxvttlGRlelUAiphb",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1025",
+        "customer": "CUS-225",
+        "userId": "USR-1025",
+        "amount": 3675,
+        "failureCode": "declined",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_aa700b795f0e",
+      "orderId": "ORD-1026",
+      "customerId": "CUS-226",
+      "userId": "USR-1026",
+      "customerName": "Kabir",
+      "amount": 4142,
+      "cause": "Customer-level insufficient funds or payment timing issue",
+      "action": "Schedule payment at customer-selected time",
+      "evidence": [
+        "paymentEvent.failureCode is insufficient_funds",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.optedOut is false",
+        "attemptCount is 1 of a maximum 2"
+      ],
+      "aiDecision": "act",
+      "confidence": 99,
+      "reasoning": "The payment failure code is insufficient_funds. The order is valid, the customer has not opted out, and the attempt limit has not been reached.",
+      "status": "AWAITING_SCHEDULE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "bLr5yarvWTMySiE9yr26KE7X",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1026",
+        "customer": "CUS-226",
+        "userId": "USR-1026",
+        "amount": 4142,
+        "failureCode": "insufficient_funds",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "SCHEDULE_PAYMENT"
+    },
+    {
+      "id": "rec_1ae7dee3cecc",
+      "orderId": "ORD-1027",
+      "customerId": "CUS-227",
+      "userId": "USR-1027",
+      "customerName": "Meera",
+      "amount": 4609,
+      "cause": "Checkout abandonment",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is abandoned",
+        "paymentEvent.issuer is Meridian Bank; the active issuer incident concerns Northstar Bank",
+        "paymentEvent.checkoutVersion is v2.6.4; the active checkout incident concerns v2.7.1",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.orderValid is true"
+      ],
+      "aiDecision": "act",
+      "confidence": 96,
+      "reasoning": "The payment failure code is abandoned. No active incident matches the payment issuer or checkout version, and the order is valid with automated recovery enabled.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "nZkQoEctK2_MxztKcwnp89iL",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1027",
+        "customer": "CUS-227",
+        "userId": "USR-1027",
+        "amount": 4609,
+        "failureCode": "abandoned",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_af951267c06e",
+      "orderId": "ORD-1028",
+      "customerId": "CUS-228",
+      "userId": "USR-1028",
+      "customerName": "Vihaan",
+      "amount": 5076,
+      "cause": "Payment declined by the issuer",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is declined",
+        "paymentEvent.issuer is Meridian Bank",
+        "No active incident matches Meridian Bank",
+        "No active incident matches checkoutVersion v2.6.4",
+        "The order is valid and the customer has not opted out"
+      ],
+      "aiDecision": "act",
+      "confidence": 90,
+      "reasoning": "The payment failure code is declined. No active incident matches Meridian Bank or checkout version v2.6.4, so the customer should be asked for the reason before selecting a recovery path.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 1
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "Ov2XmoAosJAd7KmLi36mbBV3",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1028",
+        "customer": "CUS-228",
+        "userId": "USR-1028",
+        "amount": 5076,
+        "failureCode": "declined",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 1,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    },
+    {
+      "id": "rec_da8a5cab4b9f",
+      "orderId": "ORD-1029",
+      "customerId": "CUS-229",
+      "userId": "USR-1029",
+      "customerName": "Diya",
+      "amount": 5543,
+      "cause": "Customer-level insufficient funds or payment timing issue",
+      "action": "Schedule payment at customer-selected time",
+      "evidence": [
+        "paymentEvent.failureCode is insufficient_funds",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.optedOut is false",
+        "recoveryContext.attemptCount is 1 of 2"
+      ],
+      "aiDecision": "act",
+      "confidence": 98,
+      "reasoning": "The payment failure code is insufficient_funds. The order is valid, the customer has not opted out, and the maximum attempt limit has not been reached.",
+      "status": "AWAITING_SCHEDULE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "GFXfKz1PD82R3fu-c515fR4c",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1029",
+        "customer": "CUS-229",
+        "userId": "USR-1029",
+        "amount": 5543,
+        "failureCode": "insufficient_funds",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "SCHEDULE_PAYMENT"
+    },
+    {
+      "id": "rec_2a9eb9bac0f6",
+      "orderId": "ORD-1030",
+      "customerId": "CUS-230",
+      "userId": "USR-1030",
+      "customerName": "Arjun",
+      "amount": 6010,
+      "cause": "Checkout abandonment",
+      "action": "Ask customer why checkout was not completed",
+      "evidence": [
+        "paymentEvent.failureCode is abandoned",
+        "paymentEvent.issuer is Meridian Bank, with no matching active issuer incident",
+        "paymentEvent.checkoutVersion is v2.6.4, with no matching active checkout incident",
+        "recoveryContext.orderValid is true",
+        "recoveryContext.optedOut is false"
+      ],
+      "aiDecision": "act",
+      "confidence": 96,
+      "reasoning": "The payment failure code is abandoned. There is no matching active issuer or checkout incident for this payment, the order is valid, and the customer has not opted out.",
+      "status": "AWAITING_CUSTOMER_RESPONSE",
+      "policySnapshot": {
+        "optedOut": false,
+        "attempts": 1,
+        "contacts": 0
+      },
+      "attemptCount": 1,
+      "recoveryAttemptCount": 0,
+      "maxRecoveryAttempts": 2,
+      "lastAttemptAt": null,
+      "expiredAt": null,
+      "recoveredAt": null,
+      "recoveredAmount": null,
+      "paymentConfirmation": null,
+      "escalationReason": null,
+      "stoppedAt": null,
+      "orderValid": true,
+      "paymentLink": null,
+      "scheduledFor": null,
+      "customerFeedback": null,
+      "recoveryToken": "vKchB2Z7ivpjNyNVeP8p9NNM",
+      "recoveryUrl": null,
+      "event": {
+        "id": "ORD-1030",
+        "customer": "CUS-230",
+        "userId": "USR-1030",
+        "amount": 6010,
+        "failureCode": "abandoned",
+        "issuer": "Meridian Bank",
+        "checkoutVersion": "v2.6.4",
+        "attempts": 1,
+        "contacts": 0,
+        "optedOut": false
+      },
+      "intervention": "ASK_CUSTOMER_REASON"
+    }
+  ],
+  "audit": [
+    {
+      "id": "audit_1787666018670",
+      "at": "2026-08-25T13:53:38.670Z",
+      "message": "USR-1015: fresh payment link created (incident_confirmation).",
+      "recoveryId": "rec_b1fd2fe352cf"
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "Checkout degradation · version v2.7.1: marked resolved; 8 customers asked for confirmation.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "USR-1016: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_d34606b822d3"
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "USR-1015: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_b1fd2fe352cf"
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "USR-1014: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_21eae72bb42d"
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "USR-1013: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_1f0b27245c1f"
+    },
+    {
+      "id": "audit_1787665993931",
+      "at": "2026-08-25T13:53:13.931Z",
+      "message": "USR-1012: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6005e37f8f21"
+    },
+    {
+      "id": "audit_1787665993930",
+      "at": "2026-08-25T13:53:13.930Z",
+      "message": "USR-1011: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_0b47629f65b7"
+    },
+    {
+      "id": "audit_1787665993930",
+      "at": "2026-08-25T13:53:13.930Z",
+      "message": "USR-1010: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6692fdbdf2a2"
+    },
+    {
+      "id": "audit_1787665993930",
+      "at": "2026-08-25T13:53:13.930Z",
+      "message": "USR-1009: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6af98c58b026"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "Issuer degradation · Northstar Bank: marked resolved; 8 customers asked for confirmation.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1008: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_81524f9cecd8"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1007: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_004c8062c7ba"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1006: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_05d50b338d63"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1005: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_da9e87abf327"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1004: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_d048ba5c99fb"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1003: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_45fdda388cd9"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1002: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_60f7880dea87"
+    },
+    {
+      "id": "audit_1787665991928",
+      "at": "2026-08-25T13:53:11.928Z",
+      "message": "USR-1001: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_7a343b895c5e"
+    },
+    {
+      "id": "audit_1787665972379",
+      "at": "2026-08-25T13:52:52.379Z",
+      "message": "USR-1017: customer scheduled payment recovery for 8/27/2026, 7:22:00 PM.",
+      "recoveryId": "rec_c4250d7adbd9"
+    },
+    {
+      "id": "audit_1787665929068",
+      "at": "2026-08-25T13:52:09.068Z",
+      "message": "ORD-1018: customer selected technical_problem; workflow changed to HUMAN_REVIEW.",
+      "recoveryId": "rec_23af5e5d58e6"
+    },
+    {
+      "id": "audit_1787665874577",
+      "at": "2026-08-25T13:51:14.577Z",
+      "message": "Batch-level issuer degradation detected; affected recovery workflows are bounded by server-side policy.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665874577",
+      "at": "2026-08-25T13:51:14.577Z",
+      "message": "AI Recovery Agent analysed 30 payment events.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665742760",
+      "at": "2026-08-25T13:49:02.760Z",
+      "message": "Batch-level issuer degradation detected; affected recovery workflows are bounded by server-side policy.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665742760",
+      "at": "2026-08-25T13:49:02.760Z",
+      "message": "AI Recovery Agent analysed 30 payment events.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665592815",
+      "at": "2026-08-25T13:46:32.815Z",
+      "message": "Batch-level issuer degradation detected; affected recovery workflows are bounded by server-side policy.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787665592815",
+      "at": "2026-08-25T13:46:32.815Z",
+      "message": "AI Recovery Agent analysed 30 payment events.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787660888061",
+      "at": "2026-08-25T12:28:08.061Z",
+      "message": "Verified Razorpay webhook received for unknown link plink_TTyETIELfESqGW.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787659627042",
+      "at": "2026-08-25T12:07:07.042Z",
+      "message": "Verified Razorpay webhook received for unknown link plink_TTzIU3lwRdDjkj.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658940896",
+      "at": "2026-08-25T11:55:40.896Z",
+      "message": "ORD-1030: customer selected technical_problem; workflow changed to HUMAN_REVIEW.",
+      "recoveryId": "rec_2a9eb9bac0f6"
+    },
+    {
+      "id": "audit_1787658887554",
+      "at": "2026-08-25T11:54:47.554Z",
+      "message": "USR-1016: Payment completed successfully. ₹8,172 recovered.",
+      "recoveryId": "rec_d34606b822d3"
+    },
+    {
+      "id": "audit_1787658872203",
+      "at": "2026-08-25T11:54:32.203Z",
+      "message": "USR-1016: fresh payment link created (incident_confirmation).",
+      "recoveryId": "rec_d34606b822d3"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "Issuer degradation · Northstar Bank: marked resolved; 8 customers asked for confirmation.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1008: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_81524f9cecd8"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1007: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_004c8062c7ba"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1006: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_05d50b338d63"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1005: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_da9e87abf327"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1004: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_d048ba5c99fb"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1003: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_45fdda388cd9"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1002: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_60f7880dea87"
+    },
+    {
+      "id": "audit_1787658847062",
+      "at": "2026-08-25T11:54:07.062Z",
+      "message": "USR-1001: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_7a343b895c5e"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "Checkout degradation · version v2.7.1: marked resolved; 8 customers asked for confirmation.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1016: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_d34606b822d3"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1015: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_b1fd2fe352cf"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1014: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_21eae72bb42d"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1013: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_1f0b27245c1f"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1012: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6005e37f8f21"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1011: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_0b47629f65b7"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1010: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6692fdbdf2a2"
+    },
+    {
+      "id": "audit_1787658844437",
+      "at": "2026-08-25T11:54:04.437Z",
+      "message": "USR-1009: incident resolved; awaiting customer confirmation before creating a link.",
+      "recoveryId": "rec_6af98c58b026"
+    },
+    {
+      "id": "audit_1787658825396",
+      "at": "2026-08-25T11:53:45.396Z",
+      "message": "USR-1018: customer scheduled payment recovery for 8/27/2026, 5:23:00 PM.",
+      "recoveryId": "rec_23af5e5d58e6"
+    },
+    {
+      "id": "audit_1787658821273",
+      "at": "2026-08-25T11:53:41.273Z",
+      "message": "ORD-1018: customer selected need_more_time; workflow changed to AWAITING_SCHEDULE.",
+      "recoveryId": "rec_23af5e5d58e6"
+    },
+    {
+      "id": "audit_1787658679270",
+      "at": "2026-08-25T11:51:19.270Z",
+      "message": "Batch-level issuer degradation detected; affected recovery workflows are bounded by server-side policy.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658679270",
+      "at": "2026-08-25T11:51:19.270Z",
+      "message": "AI Recovery Agent analysed 30 payment events.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658440015",
+      "at": "2026-08-25T11:47:20.015Z",
+      "message": "Batch-level issuer degradation detected; affected recovery workflows are bounded by server-side policy.",
+      "recoveryId": null
+    },
+    {
+      "id": "audit_1787658440015",
+      "at": "2026-08-25T11:47:20.015Z",
+      "message": "AI Recovery Agent analysed 30 payment events.",
+      "recoveryId": null
+    }
+  ]
+}

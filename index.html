@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Revive AI — Revenue Recovery Agent </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .status-badge {
+      display: inline-block;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font: 700 11px Manrope;
+      background: #edf0ee;
+      color: #65706a
+    }
+
+    .status-badge.scheduled {
+      background: #fff2dd;
+      color: #8a581d
+    }
+
+    .status-badge.link_created {
+      background: #e3f0ff;
+      color: #116cc4
+    }
+
+    .status-badge.recovered {
+      background: #e2f6ec;
+      color: #087250
+    }
+
+    .status-badge.approved_pending_credentials {
+      background: #fff0f0;
+      color: #a13b3b
+    }
+
+    .status-badge.expired {
+      background: #f1f3f2;
+      color: #69736e
+    }
+
+    .resolve-incident {
+      margin-top: 10px;
+      border: 0;
+      border-radius: 6px;
+      padding: 7px 9px;
+      background: #e3f0ff;
+      color: #116cc4;
+      font: 700 11px Manrope;
+      cursor: pointer
+    }
+  </style>
+</head>
+
+<body>
+  <main class="shell">
+    <nav>
+      <a class="brand" href="#top"><span class="brand-mark">R</span> Revive AI </a>
+      <div class="nav-status"><span class="pulse"></span> Policy engine active</div>
+    </nav>
+
+    <section id="top" class="hero">
+      <div>
+        <p class="eyebrow">AI REVENUE RECOVERY AGENT</p>
+        <h1>Recover revenue.<br /><em>Respect customers.</em></h1>
+        <p class="lede">Detect what's at risk. Take the right action. Recover responsibly.
+        </p>
+        <button id="analyzeBtn" class="primary">Analyse 30 payment events <span>→</span></button>
+      </div>
+      <aside class="agent-card">
+        <div class="agent-card-top"><span>AGENT STATUS</span><b>READY</b></div>
+        <p id="agentNarrative">Ready to inspect the payment stream.</p>
+        <div class="agent-rule"><span>Safety rule</span><strong>Never contact an opted-out customer</strong></div>
+      </aside>
+    </section>
+
+    <section class="metrics" aria-label="Recovery metrics">
+      <article><span>Events analysed</span><strong id="eventsMetric">—</strong><small id="eventsSub">Load the batch to
+          begin</small></article>
+      <article><span>Currently at risk</span><strong id="riskMetric">—</strong><small id="riskSub">Total revenue at risk
+          before recovery: —</small></article>
+      <article><span>Recovered revenue</span><strong id="actionMetric">—</strong><small id="actionSub">Verified
+          successful payments</small></article>
+      <article><span>Protected from bad outreach</span><strong id="protectedMetric">—</strong><small
+          id="protectedSub">Suppressed by guardrails</small></article>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel wide">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">ROOT-CAUSE MONITOR</p>
+            <h2>Degradation incidents</h2>
+          </div>
+          <span id="incidentState" class="tag neutral">Awaiting analysis</span>
+        </div>
+        <div id="incidentList" class="empty-state">Run the agent to inspect payment patterns and detect incidents.</div>
+      </div>
+
+      <div class="panel policy-panel">
+        <p class="eyebrow">MONEY ACTION GUARDRAILS</p>
+        <h2>Policy before action</h2>
+        <ul class="policy-list">
+          <li><span>01</span> One reminder per customer / 48 hours</li>
+          <li><span>02</span> Maximum two recovery attempts per order</li>
+          <li><span>03</span> Opt-out and quiet hours always win</li>
+          <li><span>04</span> Active incident blocks customer outreach</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel queue-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">RECOVERY QUEUE</p>
+          <h2>Recommended actions</h2>
+        </div>
+        <div class="legend"><span class="dot blue"></span> Approval needed <span class="dot grey"></span> Suppressed
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>User ID</th>
+              <th>At risk</th>
+              <th>Likely cause</th>
+              <th>Recommended action</th>
+              <th>Decision</th>
+            </tr>
+          </thead>
+          <tbody id="queueBody">
+            <tr>
+              <td colspan="6" class="empty-cell">No recovery recommendations yet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-grid lower-grid">
+      <div class="panel audit-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">AUDIT TRAIL</p>
+            <h2>Every action explained</h2>
+          </div>
+        </div>
+        <ol id="auditList" class="audit-list">
+          <li class="empty-state compact">The audit trail will appear here.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <template id="queueRowTemplate">
+    <tr>
+      <td class="order"></td>
+      <td class="user-id"></td>
+      <td class="amount"></td>
+      <td><span class="cause"></span></td>
+      <td class="action"></td>
+      <td class="decision"></td>
+    </tr>
+  </template>
+  <script src="./app.js"></script>
+</body>
+
+</html>

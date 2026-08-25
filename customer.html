@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Revive AI Customer Portal</title>
+    <link rel="stylesheet" href="/customer.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Payment recovery</h1>
+            <p>Review your payment updates and choose the next step.</p>
+        </header>
+        <section id="login">
+            <h2>Demo login</h2>
+            <form id="loginForm"><input id="customerId" placeholder="User ID, e.g. USR-1025" required><button>View my
+                    payments</button></form>
+        </section>
+        <section id="portal" hidden>
+            <section class="welcome">
+                <h2 id="customerGreeting">Hi 👋</h2>
+                <p>We're here to help you complete your payment.</p>
+            </section><button id="logout" class="quiet">Switch user</button>
+            <div id="cards"></div>
+        </section>
+        <p id="error"></p>
+    </main>
+    <div id="reasonModal" class="modal-backdrop" hidden>
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="reasonTitle">
+            <div id="reasonContent"></div>
+        </section>
+    </div>
+    <script src="/customer.js"></script>
+</body>
+
+</html>

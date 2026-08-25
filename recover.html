@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complete your payment | Revive AI </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/recover.css" />
+</head>
+
+<body>
+  <main class="card">
+    <div class="brand"><span>R</span> Revive AI</div>
+    <section id="loading">Loading your recovery details…</section>
+    <section id="content" hidden>
+      <p class="eyebrow">PAYMENT RECOVERY</p>
+      <h1>Your payment wasn’t completed.</h1>
+      <p class="muted">Order <strong id="order"></strong> · <strong id="amount"></strong></p>
+      <p>Can you tell us what happened?</p>
+      <form id="feedbackForm">
+        <label><input type="radio" name="reason" value="insufficient_funds" required /> I don't have enough funds right
+          now</label>
+        <label><input type="radio" name="reason" value="technical_problem" /> I had a technical problem</label>
+        <label><input type="radio" name="reason" value="payment_method_issue" /> My payment method didn't work</label>
+        <label><input type="radio" name="reason" value="need_more_time" /> I need more time to pay</label>
+        <label><input type="radio" name="reason" value="continue" /> I still want to continue</label>
+        <label><input type="radio" name="reason" value="changed_mind" /> I changed my mind</label>
+        <label><input type="radio" name="reason" value="other" /> Other</label>
+        <label><input type="radio" name="reason" value="skip" /> Skip</label>
+        <div id="methodDetails" hidden>
+          <input id="paymentMethod" maxlength="120" placeholder="Payment method (for example, UPI or card)" />
+          <input id="preferredProvider" maxlength="120" placeholder="Preferred bank or provider" />
+          <input id="whatHappened" maxlength="120" placeholder="What happened?" />
+        </div>
+        <textarea id="note" maxlength="500" placeholder="Optional note (max 500 characters)"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="complete" hidden>
+      <p class="eyebrow">THANK YOU</p>
+      <h1 id="completeTitle">We’ve recorded your response.</h1>
+      <p id="completeMessage" class="muted"></p><a id="paymentLink" hidden>Continue to secure payment</a>
+    </section>
+    <p id="error" role="alert"></p>
+  </main>
+  <script src="/recover.js"></script>
+</body>
+
+</html>
