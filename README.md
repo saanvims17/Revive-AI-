@@ -1,27 +1,10 @@
 <p align="center">
-  <img src="YOUR_REVIVEAI_LOGO_URL" width="120" />
+  <img src="./assets/openai.png" height="55" alt="OpenAI" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/razorpay" height="55" alt="Razorpay" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/nodedotjs" height="55" alt="Node.js" />
 </p>
-
-<h1 align="center">ReviveAI</h1>
-
-<p align="center">
-  <strong>AI Revenue Recovery Agent</strong>
-</p>
-
-<p align="center">
-  Detect what's at risk. Take the right action. Recover responsibly.
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/openai" height="35" alt="OpenAI" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/razorpay" height="35" alt="Razorpay" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/nodedotjs" height="35" alt="Node.js" />
-</p>
-
-<div align="center">
-
 # Revive AI - Revenue Recovery Agent
 
 </div>
