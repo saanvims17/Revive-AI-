@@ -1,13 +1,12 @@
 <p align="center">
-  <img src="./assets/openai.png" height="55" alt="OpenAI" />
+  <img src="/data/openai.png" height="55" alt="OpenAI" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/razorpay" height="55" alt="Razorpay" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/nodedotjs" height="55" alt="Node.js" />
 </p>
-# Revive AI - Revenue Recovery Agent
 
-</div>
+## Revive AI - Revenue Recovery Agent
 
 </div>
 <img width="1000" height="500" alt="Dashboraed " src="https://github.com/user-attachments/assets/db3d0b63-b3b6-4a6a-b09a-2c4e1a8a7bc3" />
@@ -50,6 +49,160 @@ ReviveAI does not stop after identifying a problem.
 # System Architecture
 
 <img width="1000" height="500" alt="System Architecture " src="https://github.com/user-attachments/assets/2d2571e3-fabc-40e6-9733-3ccd43a672b7" />
+
+## Admin Dashboard
+
+Used for:
+
+- Monitoring recovery cases
+- Viewing diagnoses
+- Viewing recommended interventions
+- Tracking workflow status
+- Monitoring incidents
+- Viewing notifications and link status
+- Tracking revenue recovered
+- Reviewing the audit trail
+
+## Customer Portal
+
+Used for:
+
+- Explaining why payment was not completed
+- Scheduling a payment
+- Reporting a bank issue
+- Reporting a technical issue
+- Providing payment method feedback
+- Continuing payment
+- Accessing an eligible fresh payment link
+- Stopping recovery
+
+Customer actions are **not performed from the admin dashboard**.
+
+Each customer logs in using a User ID and sees only the recovery actions relevant to them.
+
+<img width="800" height="300" alt="Userlogin" src="https://github.com/user-attachments/assets/41f8121c-5c3a-4a2c-b582-6e8c0bf96c1d" />
+
+
+---
+
+# Measuring Revenue Recovery
+
+ReviveAI does not count a recovery as successful merely because a payment link was generated.
+
+The recovery is completed only after payment success is verified.
+
+
+### Example
+
+Before payment:
+
+<img width="2398" height="326" alt="before recovery " src="https://github.com/user-attachments/assets/eff88d3d-444d-4e53-8183-c5367dfd212c" />
+
+
+Customer successfully pays: ₹9,279
+
+<img width="500" height="300" alt="Payement " src="https://github.com/user-attachments/assets/ffa248e6-8a81-4988-acd9-f6492319bfa1" />
+
+After verification:
+<img width="2418" height="350" alt="recovered " src="https://github.com/user-attachments/assets/f11b2a6a-18b9-40e2-a723-c021bdc7e2f7" />
+
+
+This allows ReviveAI to demonstrate **measured revenue recovered across a batch**, not just recommended actions.
+
+---
+
+# Audit Trail
+
+Every important action in the recovery workflow is recorded.
+
+<img width="400" height="600" alt="Audit Trail" src="https://github.com/user-attachments/assets/00910ec6-dffb-4f62-ab8d-324d49e341e1" />
+
+
+The dashboard reflects **actual application events**.
+
+A notification is not marked as sent unless the application executed the notification action.
+
+A payment link is not marked as available unless it was successfully created.
+
+Revenue is not marked as recovered until payment success is verified.
+
+---
+
+# Recovery Statuses
+
+ReviveAI uses explicit workflow states to show what is happening with each case.
+
+| Status | Meaning |
+|---|---|
+| `AWAITING_CUSTOMER_RESPONSE` | Waiting for the customer to choose a reason |
+| `AWAITING_SCHEDULE` | Customer needs to choose a payment time |
+| `SCHEDULED` | Recovery is scheduled for the selected time |
+| `WAITING_FOR_BANK_RESOLUTION` | Waiting for a matching bank incident to resolve |
+| `WAITING_FOR_TECHNICAL_RESOLUTION` | Waiting for a known technical incident to resolve |
+| `HUMAN_REVIEW` | A human needs to investigate the issue |
+| `PAYMENT_METHOD_FEEDBACK_COLLECTED` | Customer feedback was recorded |
+| `READY_TO_GENERATE_LINK` | Eligible for fresh link generation |
+| `RECOVERY_LINK_READY` | Fresh payment link is available |
+| `RECOVERED` | Payment was successfully verified |
+| `STOPPED` | Recovery cannot continue under policy |
+
+---
+
+# Dashboard
+
+For every recovery case, the dashboard displays:
+
+<img width="800" height="500" alt="Queue " src="https://github.com/user-attachments/assets/f9f2d11f-7d7f-4f31-b7c8-808f83e56e7a" />
+
+
+| Field | Description |
+|---|---|
+| Order ID | Payment order being recovered |
+| User ID | Customer login identifier |
+| Customer | Customer associated with the case |
+| Amount at risk | Revenue currently at risk |
+| Likely cause | Diagnosis |
+| Recommended action | Selected intervention |
+| Action | Current status |
+
+The dashboard is designed for **monitoring and visibility**.
+
+The customer portal handles customer decisions and actions.
+
+---
+
+# Payment Recovery
+
+When a recovery workflow is eligible to generate a payment link, ReviveAI:
+
+1. Rechecks hard recovery policies
+2. Creates exactly one bounded fresh payment link
+3. Uses a stable reference/idempotency mechanism
+4. Sets a short expiry
+5. Makes the link available through the recovery workflow
+6. Waits for verified payment updates
+7. Updates recovery metrics after successful verification
+
+The system does not treat link creation as recovered revenue.
+
+**Only a verified successful payment counts as recovery.**
+
+---
+
+# Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Node.js |
+| AI Reasoning | OpenAI API |
+| Payment Integration | Razorpay |
+| Payment Verification | Razorpay Webhooks |
+| Storage | JSON / application persistence |
+| Local Development | Node.js server |
+| Webhook Tunneling | Public tunnel for local webhook testing |
+
+---
 
 
 # Key Capabilities
@@ -101,14 +254,7 @@ When the reason is unknown, ReviveAI does not blindly retry the payment.
 
 The customer is asked to choose the relevant reason:
 
-```text
-Insufficient funds / Need more time
-My bank has a payment issue
-I had a technical issue
-Payment method unavailable
-I still want to continue
-I changed my mind
-```
+<img width="500" height="450" alt="checkout issue " src="https://github.com/user-attachments/assets/e732b0f1-b301-45a4-9b35-4e507ba05a51" />
 
 Each answer moves the recovery case into a different workflow.
 
@@ -138,12 +284,13 @@ Customer completes payment
               ↓
 Payment is verified
 ```
+<img width="500" height="500" alt="schedule " src="https://github.com/user-attachments/assets/8716a2b5-da4f-49d2-9355-9763aa4faf05" />
 
 The customer chooses when they are ready rather than being repeatedly retried.
 
 ---
 
-## 3. Temporary Bank Issue
+## 3. Temporary Issue
 
 If the customer's issue matches an active bank or issuer incident:
 
@@ -164,6 +311,7 @@ Fresh payment link is created
               ↓
 Customer can complete payment
 ```
+<img width="1616" height="988" alt="technical issue " src="https://github.com/user-attachments/assets/ce5edc45-5273-4d47-b51c-3b821d1bb5c1" />
 
 The agent does not treat a temporary bank outage as a reason to stop recovery.
 
@@ -187,9 +335,8 @@ Customer is informed
 Support can resolve the issue
 ```
 
-Customer message:
+<img width="500" height="300" alt="technical issue " src="https://github.com/user-attachments/assets/850fcbb1-ab34-4c97-849b-b4222607db92" />
 
-> **Thanks for letting us know. Our team will review the issue and someone will get in touch with you to help resolve it.**
 
 ---
 
@@ -204,6 +351,8 @@ Information collected includes:
 - What happened
 
 Each field has a **20-character limit** with a live character counter.
+
+<img width="500" height="400" alt="payment method " src="https://github.com/user-attachments/assets/f9312ae8-35ee-41e3-bd33-cfa1998610d0" />
 
 The feedback is saved for review and future analysis.
 
@@ -235,6 +384,7 @@ Payment verified
         ↓
 Revenue recovered
 ```
+<img width="500" height="300" alt="payment " src="https://github.com/user-attachments/assets/f2d8d7a8-fedd-4d96-92f9-e7e90a0fbe3b" />
 
 A fresh payment link is generated only when the recovery is still eligible.
 
@@ -255,6 +405,8 @@ Reason recorded
       ↓
 No further recovery actions
 ```
+<img width="500" height="300" alt="stop" src="https://github.com/user-attachments/assets/f86bad64-ab46-4df4-8c71-e6c9a6b038ac" />
+
 
 The system respects explicit customer intent.
 
@@ -365,190 +517,7 @@ This makes ReviveAI autonomous within clearly defined safety boundaries.
 
 The admin dashboard and customer workflow are intentionally separated.
 
-## Admin Dashboard
-
-Used for:
-
-- Monitoring recovery cases
-- Viewing diagnoses
-- Viewing recommended interventions
-- Tracking workflow status
-- Monitoring incidents
-- Viewing notifications and link status
-- Tracking revenue recovered
-- Reviewing the audit trail
-
-## Customer Portal
-
-Used for:
-
-- Explaining why payment was not completed
-- Scheduling a payment
-- Reporting a bank issue
-- Reporting a technical issue
-- Providing payment method feedback
-- Continuing payment
-- Accessing an eligible fresh payment link
-- Stopping recovery
-
-Customer actions are **not performed from the admin dashboard**.
-
-Each customer logs in using a User ID and sees only the recovery actions relevant to them.
-
-Example:
-
-```text
-USR-1037
-USR-1036
-USR-1018
-```
-
----
-
-# Measuring Revenue Recovery
-
-ReviveAI does not count a recovery as successful merely because a payment link was generated.
-
-The recovery is completed only after payment success is verified.
-
-```text
-Revenue at risk
-       ↓
-Recovery workflow executed
-       ↓
-Customer receives / accesses payment link
-       ↓
-Customer completes payment
-       ↓
-Payment provider sends update
-       ↓
-Payment is verified
-       ↓
-Recovery marked as RECOVERED
-       ↓
-Currently at risk decreases
-       ↓
-Revenue recovered increases
-```
-
-### Example
-
-```text
-Before payment:
-
-Currently at risk: ₹4,79,559
-Revenue recovered: ₹0
-
-Customer successfully pays: ₹9,279
-
-After verification:
-
-Currently at risk: ₹4,70,280
-Revenue recovered: ₹9,279
-```
-
-This allows ReviveAI to demonstrate **measured revenue recovered across a batch**, not just recommended actions.
-
----
-
-# Audit Trail
-
-Every important action in the recovery workflow is recorded.
-
-<img width="400" height="600" alt="Audit Trail" src="https://github.com/user-attachments/assets/00910ec6-dffb-4f62-ab8d-324d49e341e1" />
-
-
-
-The dashboard reflects **actual application events**.
-
-A notification is not marked as sent unless the application executed the notification action.
-
-A payment link is not marked as available unless it was successfully created.
-
-Revenue is not marked as recovered until payment success is verified.
-
----
-
-# Recovery Statuses
-
-ReviveAI uses explicit workflow states to show what is happening with each case.
-
-| Status | Meaning |
-|---|---|
-| `AWAITING_CUSTOMER_RESPONSE` | Waiting for the customer to choose a reason |
-| `AWAITING_SCHEDULE` | Customer needs to choose a payment time |
-| `SCHEDULED` | Recovery is scheduled for the selected time |
-| `WAITING_FOR_BANK_RESOLUTION` | Waiting for a matching bank incident to resolve |
-| `WAITING_FOR_TECHNICAL_RESOLUTION` | Waiting for a known technical incident to resolve |
-| `HUMAN_REVIEW` | A human needs to investigate the issue |
-| `PAYMENT_METHOD_FEEDBACK_COLLECTED` | Customer feedback was recorded |
-| `READY_TO_GENERATE_LINK` | Eligible for fresh link generation |
-| `RECOVERY_LINK_READY` | Fresh payment link is available |
-| `RECOVERED` | Payment was successfully verified |
-| `STOPPED` | Recovery cannot continue under policy |
-
----
-
----
-
-# Dashboard
-
-For every recovery case, the dashboard displays:
-
-<img width="800" height="500" alt="Queue " src="https://github.com/user-attachments/assets/f9f2d11f-7d7f-4f31-b7c8-808f83e56e7a" />
-
-
-| Field | Description |
-|---|---|
-| Order ID | Payment order being recovered |
-| User ID | Customer login identifier |
-| Customer | Customer associated with the case |
-| Amount at risk | Revenue currently at risk |
-| Likely cause | Diagnosis |
-| Recommended action | Selected intervention |
-| Current workflow | Current recovery state |
-| Customer notified | Whether notification was executed |
-
-
-The dashboard is designed for **monitoring and visibility**.
-
-The customer portal handles customer decisions and actions.
-
----
-
-# Payment Recovery
-
-When a recovery workflow is eligible to generate a payment link, ReviveAI:
-
-1. Rechecks hard recovery policies
-2. Creates exactly one bounded fresh payment link
-3. Uses a stable reference/idempotency mechanism
-4. Sets a short expiry
-5. Makes the link available through the recovery workflow
-6. Waits for verified payment updates
-7. Updates recovery metrics after successful verification
-
-The system does not treat link creation as recovered revenue.
-
-**Only a verified successful payment counts as recovery.**
-
----
-
-# Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | HTML, CSS, JavaScript |
-| Backend | Node.js |
-| AI Reasoning | OpenAI API |
-| Payment Integration | Razorpay |
-| Payment Verification | Razorpay Webhooks |
-| Storage | JSON / application persistence |
-| Local Development | Node.js server |
-| Webhook Tunneling | Public tunnel for local webhook testing |
-
----
-
+--- 
 # Getting Started
 
 ## 1. Clone the repository
